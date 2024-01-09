@@ -1,6 +1,8 @@
 function slugify(title) {
-    let createRow = title.join("-");
-    let slug = createRow.toLowerCase();
+     let lowTitle = title.toLowerCase();
+    let createArray= lowTitle.split(" ");
+    let slug= createArray.join("-");
+   
     return slug;
 }
 
